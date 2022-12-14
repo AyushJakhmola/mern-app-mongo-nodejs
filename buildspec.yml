@@ -4,7 +4,7 @@ run-as: root
 
 env:
   parameter-store:
-    MongoDb_url: "/mongo/url"
+    MongoDb_url: "/ayush/mongodburl"
 
 phases:
   install:
