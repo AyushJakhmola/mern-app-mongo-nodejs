@@ -4,7 +4,7 @@ runas: app
 
 files:
   - source: /
-    destination: /home/ubuntu/mern-app-mongo-nodejs
+    destination: /home/app/mern-app-mongo-nodejs
     overwrite: true
     timeout: 300
 
