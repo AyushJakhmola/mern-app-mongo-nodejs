@@ -18,13 +18,11 @@ phases:
       - npm install
   build:
     commands:
-      - sed -i "s|localhost|"$MongoDb_url"|" app.js
-      - echo Building ...
-
+      - echo "MONGODB_URI=$mongo_url" > .env
+      - cat .env
   post_build:
     commands:
       - echo Build complete
-
 artifacts:
   files:
     - '**/*'
